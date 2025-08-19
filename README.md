@@ -1,2 +1,11 @@
-# union-of-2-sorted-arrays
-union of 2 sorted arrays
+class Solution:
+    
+    #Function to return a list containing the union of the two arrays.
+    def findUnion(self,a,b):
+        s=a+b
+        d=set(s)
+        t=[]
+        for i in d:
+            t.append(i)
+        t.sort()
+        return t
